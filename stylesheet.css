@@ -1,0 +1,102 @@
+﻿/*
+Title:  Compliment Generator
+Author: Everlyn loza Leon
+*/      
+
+/*
+    Main
+*/
+* { box-sizing: border-box; }
+
+h1 { font-size: 80px; }
+
+h2 { font-size: 70px; }
+
+p { font-size: 30px; }
+
+body {
+    background-image: url(images/background.png);
+    font-family: 'Tangerine', serif;
+    font-size: 50px;
+}
+
+header {
+    background-color: plum;
+    font-size: 35px;
+    padding: 30px;
+    text-align: center;
+}
+
+footer {
+    background-color: plum;
+    padding: 20px;
+    text-align: center;
+}
+
+/*
+    Extras
+*/
+
+div {
+    padding: 50px;
+    text-align: center;
+    text-align: center;
+}
+
+#complimentArea {
+    font-size: 60px;
+    height: 30px;
+}
+
+.ribbon {
+    background: palegreen;
+    color: #000000;
+    font-family: 'Tangerine', serif, bold;
+    font-size: 40px !important;
+    margin: 2em auto 3em;
+    padding: 1em 2em;
+    position: relative;
+    text-align: center;
+    width: 70%;
+}
+
+.ribbon:before, .ribbon:after {
+    border: 1.5em solid palegreen;
+    bottom: -1em;
+    content: "";
+    display: block;
+    position: absolute;
+
+    z-index: -1;
+}
+
+.ribbon:before {
+    border-left-color: transparent;
+    border-right-width: 1.5em;
+    left: -2em;
+}
+
+.ribbon:after {
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+    right: -2em;
+}
+
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+    border-color: aquamarine transparent transparent transparent;
+    border-style: solid;
+    bottom: -1em;
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+.ribbon .ribbon-content:before {
+    border-width: 1em 0 0 1em;
+    left: 0;
+}
+
+.ribbon .ribbon-content:after {
+    border-width: 1em 1em 0 0;
+    right: 0;
+}
